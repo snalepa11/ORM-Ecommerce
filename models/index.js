@@ -17,10 +17,16 @@ Category.hasMany(Product, {
 });
 // Products belongToMany Tags (through ProductTag)
 //might need to take type: Datatypes.INTEGER out 
-Product.belongsToMany(Tag, { through: ProductTag, foreignKey: { name: 'product_id', type: DataTypes.INTEGER } });
+Product.belongsToMany(Tag, { 
+  through: ProductTag, 
+  foreignKey: 'product_id' 
+});
 
 // Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product, { through: ProductTag, foreignKey: { name: 'tag_id', type: DataTypes.INTEGER } });
+Tag.belongsToMany(Product, { 
+  through: ProductTag, 
+  foreignKey: 'tag_id'
+});
 
 module.exports = {
   Product,
