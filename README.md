@@ -1,7 +1,16 @@
 # ORM-Ecommerce
+A backend application for an E-commerce website. 
 
+## Technologies
+* Node.js
+* Express
+* Sequelize
+* Postgres
 
-## Description
+## Installation
+* Clone this repository onto your local machine
+* Run npm i to install all necessary packages
+* begin server by typing node server.js into terminal
 
 ## Screenshots
 
